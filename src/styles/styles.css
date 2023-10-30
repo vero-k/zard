@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css?family=Slackey&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jaldi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #dedbdf;
+  font-family: 'Jaldi', sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.uber {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  /*position: relative;*/
+  row-gap: 0px;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* /////////////////////////////////
+        INPUT
+//////////////////////////*/
+input {
+  pointer-events: initial;
+}
+
+.reg-input {
+  max-height: 2em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #dcdbdf;
+  text-indent: 10px;
+  line-height: 1;
+  color: #333333;
+  margin: 0 10px;
+  padding: 5px 5px;
+  border: 3px solid rgba(186, 186, 212, 0.425);
+  font-family: 'Jaldi', sans-serif;
+  font-size: 13px;
+  pointer-events: initial;
+}
+
+.reg-input:focus {
+  outline: 0;
+}
+
+.reg-textarea {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #dcdbdf;
+  text-indent: each-line;
+  line-height: 1;
+  color: #333333;
+  margin: 0 10px;
+  padding: 5px 5px;
+  border: 3px solid rgba(186, 186, 212, 0.425);
+  font-family: 'Jaldi', sans-serif;
+  font-size: 13px;
+  height: 100%;
+  pointer-events: initial;
+}
+
+.reg-textarea:focus {
+  outline: 0;
+}
+
+.feedbackstructure button {
+  margin: 0;
+}
+
+label {
+  padding-top: 4px;
+}
+
+/* /////////////////////////////////
+        SELECT
+//////////////////////////*/
+.reg-select {
+  cursor: pointer;
+  outline: 0;
+  border: 0px;
+  background-color: rgba(186, 186, 212, 0.425);
+  margin: 1em auto;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: 1rem;
+  font-family: 'Jaldi', sans-serif;
+  pointer-events: initial;
+}
+
+.reg-select option {
+  background-color: rgba(186, 186, 212, 0.425);
+  margin: auto;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-family: 'Jaldi', sans-serif;
+}
+
+/* /////////////////////////////////
+        BUTTON
+//////////////////////////*/
+.reg-bttn {
+  font-size: calc(10px + 0.2vw);
+  max-height: 5em;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgba(153, 139, 230, 0.1);
+  background-image: url("../img/placks/plack3.png");
+  background-position: center;
+  border: 3px groove #dedbdf;
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-stretch: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  pointer-events: initial;
+  cursor: pointer;
+}
+
+.reg-bttn:hover {
+  /*background-color: rgba(57, 21, 121, 0.5);*/
+}
+
+.reg-bttn:focus {
+  outline: 0;
+}
+
+/*///////////////////////
+    TITLE
+////////////////////////*/
+.game-subtitle {
+  color: #333;
+  background-color: rgba(65, 14, 204, 0.493);
+}
+
+h1, h2, h3 {
+  font-family: 'Jaldi', sans-serif;
+  font-family: 'Bungee', cursive;
+}
+
+/*///////////////////////
+    MAIN PART
+////////////////////////*/
+.main-part {
+  text-align: center;
+  /*push content to the right instead of content just appearing on right */
+  /*transition: margin-left 0.5s;*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  pointer-events: none;
+}
+
+/*///////////////////////////
+    HEADER 
+///////////////////////////*/
+.header-upper-bar {
+  /*
+    overflow:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+  height: 17px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 3em;
+  pointer-events: initial;
+}
+
+.header-upper-bar .navbar-nav {
+  list-style: none;
+  justify-self: flex-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: initial;
+}
+
+.navbar-nav {
+  padding: 0 2em 0 2em;
+}
+
+.navbar-link {
+  color: #ddd7f1;
+  font-size: 17px;
+  text-align: center;
+  padding: 0 0 12%;
+  pointer-events: initial;
+}
+
+.header-lower-bar {
+  /*
+    position: absolute;
+    top: 70px;
+    left: 0;
+    */
+  background: -webkit-gradient(linear, right top, left top, from(#6413fa), color-stop(41%, #7d6ec1), color-stop(97%, #8e89bb));
+  background: linear-gradient(-90deg, #6413fa 0%, #7d6ec1 41%, #8e89bb 97%);
+  height: 50px;
+  width: 100%;
+  position: relative;
+  z-index: -2000;
+}
+
+.logo-header {
+  height: 50px;
+  width: 100px;
+  padding: 1em 1px 1em 70px;
+  justify-self: flex-start;
+  position: relative;
+  z-index: -1500;
+}
+
+.open-slide {
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: 10px;
+  pointer-events: initial;
+}
+
+/* any styles put in here will only be put in effect if width below 568px */
+@media (max-width: 350px) {
+  .navbar-nav a {
+    display: none;
+  }
+}
+
+/*//////////////////////
+    FOOTER
+/////////////////////*/
+.footer {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 1em 0 0 0;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#6413fa), color-stop(41%, #7d6ec1), color-stop(97%, #8e89bb));
+  background: linear-gradient(-90deg, #6413fa 0%, #7d6ec1 41%, #8e89bb 97%);
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 0.5em;
+  font-family: 'Jaldi', sans-serif;
+  font-size: calc(8px + 0.2vw);
+  pointer-events: initial;
+}
+
+.container-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.menu ul {
+  text-align: right;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.menu a {
+  color: white;
+}
+
+/* ///////////////////////////////////
+    FEEDBACK 
+//////////////////////////////////////*/
+/* ///////////////////////////////////
+    FEEDBACK 
+//////////////////////////////////////*/
+.feedbackstructure {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+  margin: 10px 0 10px 0;
+}
+
+.feedbackgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 20% 60%;
+      grid-template-rows: 20% 20% 60%;
+  row-gap: 20px;
+}
+
+.feedbackgrid div {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.error-message-form {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-indent: 10px;
+}
+
+/* ///////////////////////////////////
+    ...
+//////////////////////////////////////*/
+.bg-middle {
+  position: absolute;
+  background-color: #c8c5da;
+  /*#*/
+  z-index: -10000;
+  top: 0px;
+}
+
+.dialog {
+  pointer-events: initial;
+}
+
+/*
+    HOME 
+*/
+.home-die {
+  pointer-events: initial;
+}
+
+.homepointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-aspect-ratio: 1 / 1) {
+  .home-die {
+    height: calc(100vw);
+    width: calc(100vw);
+  }
+}
+
+@media only screen and (aspect-ratio: 1 / 1) {
+  .home-die {
+    height: calc(100vh - 50px);
+    width: calc(100vh - 50px);
+  }
+}
+
+@media only screen and (min-aspect-ratio: 1 / 1) {
+  .home-die {
+    height: calc(100vh - 50px);
+    width: calc(100vh - 50px);
+  }
+}
+
+.layered-tiles {
+  position: absolute;
+  z-index: -1000;
+  top: 0px;
+  left: 50px;
+  height: calc(100vw - 50px);
+  width: calc(100vw - 50px);
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,119 @@
+
+/* ///////////////////////////////////
+    SEARCH BAR, SLIDER NAV
+//////////////////////////////////////*/
+
+.search-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -180;
+    background-color: rgb(222, 219, 223);
+
+
+    transition: all 0.3s ease-in;
+    z-index: 10000;
+
+    pointer-events: initial;
+    
+}
+
+.sb-section {
+    
+
+    background-color: rgb(113,41,240);
+
+    display: block;
+    text-align: left;
+    line-height: 3;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+
+    transition: letter-spacing .5s;
+    font-family: 'Jaldi', sans-serif;
+    font-style: oblique;
+}
+
+.sb-section:focus,
+.sb-section:hover{
+    background:  rgb(186, 186, 212);
+    letter-spacing: 1px;
+}
+
+
+.sb-link{
+    color: black;
+}
+
+
+.sb-section:active{
+    
+}
+
+
+.sb-section-special {
+    
+
+    background-color: rgb(166, 145, 243);
+
+    display: block;
+    text-align: left;
+    line-height: 3;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+
+    transition: letter-spacing .5s;
+    font-family: 'Jaldi', sans-serif;
+    font-style: oblique;
+}
+
+.sb-section-special:focus,
+.sb-section-special:hover{
+    background:  rgb(186, 186, 212);
+    letter-spacing: 1px;
+}
+
+
+.btn-close-sidebar{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left:50px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.bttn-sidebar {
+    margin: 1px 0 0 0;
+    border: 1px solid rgb(141, 141, 196);
+    padding: 0.5em 1em 0.5em 1em;
+    background-color:  rgba(157, 157, 202, 0.555);
+    
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 0.3rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.bttn-sidebar:hover{
+    transform: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bttn-sidebar:active{
+    transform: scale(0.90);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bttn-sidebar:focus {
+    outline: 0
+}
+
+
+
+
+

@@ -1,0 +1,99 @@
+/* ///////////////////////////////////
+    SEARCH BAR, SLIDER NAV
+//////////////////////////////////////*/
+.search-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: -180;
+  background-color: #dedbdf;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: 10000;
+  pointer-events: initial;
+}
+
+.sb-section {
+  background-color: #7129f0;
+  display: block;
+  text-align: left;
+  line-height: 3;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  -webkit-transition: letter-spacing .5s;
+  transition: letter-spacing .5s;
+  font-family: 'Jaldi', sans-serif;
+  font-style: oblique;
+}
+
+.sb-section:focus,
+.sb-section:hover {
+  background: #babad4;
+  letter-spacing: 1px;
+}
+
+.sb-link {
+  color: black;
+}
+
+.sb-section-special {
+  background-color: #a691f3;
+  display: block;
+  text-align: left;
+  line-height: 3;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  -webkit-transition: letter-spacing .5s;
+  transition: letter-spacing .5s;
+  font-family: 'Jaldi', sans-serif;
+  font-style: oblique;
+}
+
+.sb-section-special:focus,
+.sb-section-special:hover {
+  background: #babad4;
+  letter-spacing: 1px;
+}
+
+.btn-close-sidebar {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.bttn-sidebar {
+  margin: 1px 0 0 0;
+  border: 1px solid #8d8dc4;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: rgba(157, 157, 202, 0.555);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.bttn-sidebar:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bttn-sidebar:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bttn-sidebar:focus {
+  outline: 0;
+}
+/*# sourceMappingURL=stylesSideBar.css.map */
