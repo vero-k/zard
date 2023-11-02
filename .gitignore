@@ -6,7 +6,6 @@
 
 # Development build
 /.cache
-/public
 
 # Environment variables
 .env.local
