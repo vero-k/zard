@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../img/logo/zard2.svg';
+import ZardIcon2 from '../img/logo/ZardIcon2';
 
 // uses import '../css/stylesSideBar.css';
 
@@ -27,7 +27,7 @@ class Sidebar extends Component {
                 <div className="search-bar">
                     <a href="#" className="btn-close-sidebar" onClick={this.closeSideBar}>&times;</a>
                     <div className="logo">
-                        <img alt="zard logo" className="logo-header" src={logo} />
+                        <ZardIcon2 className="logo-header"/>
                     </div>
 
 

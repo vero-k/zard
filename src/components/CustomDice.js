@@ -19,7 +19,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 */
 
 import plack from '../img/placks/plack1.png';
-import cross from '../img/cross/cross1.svg';
+import CrossIcon1 from '../img/cross/CrossIcon1.js';
 
 //import birdy from '../img/loadinganimation/birdy.gif'
 import die_still from '../img/custom/questiondie.png';
@@ -562,7 +562,7 @@ class CustomDice extends Component {
                                                                 <div className="added-entry added-entry-type-selected"> 
                                                                     <input type="text" className="reg-input short-txt-input-entry-type custominput" placeholder="Type Entry..." onChange={(event) => this.recordInput(event, index)}/>
                                                                     <input type="text" style={(entry.error)? {backgroundColor: "red"}:{}} className={"short-txt-input-entry-type customprobability"} placeholder="Probability" onChange={(event) => this.recordProbability(event, index)}/>
-                                                                    <button onClick={() => this.removeEntry(index)} className="remove-entry"><img alt="remove entry" className="cross-bttn" src={cross}></img></button>
+                                                                    <button onClick={() => this.removeEntry(index)} className="remove-entry"><CrossIcon1 alt="remove entry" className="cross-bttn" /></button>
                                                                     
                                                                 </div>
 

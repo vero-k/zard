@@ -10,7 +10,7 @@ import _ from 'lodash';
 import {valueMap, versionMap, versionArray, select, findSides, diceLimit} from '../helpers/Maps.js'
 
 import plack from '../img/placks/plack1.png';
-import cross from '../img/cross/cross1.svg';
+import CrossIcon1 from '../img/cross/CrossIcon1.js';
 
 
 
@@ -482,7 +482,7 @@ class MixedDice extends Component {
                                                                             }
                                                                         </select> 
                                                                         
-                                                                        <button onClick={() => this.removeDie(index)} className="remove-entry"><img alt="remove entry" className="cross-bttn" src={cross}></img></button>
+                                                                        <button onClick={() => this.removeDie(index)} className="remove-entry"><CrossIcon1 alt="remove entry" className="cross-bttn"/></button>
                                                                         {console.log("index " + index)}
                                                                     </div>
                                                                 </React.Fragment>

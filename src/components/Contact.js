@@ -4,11 +4,11 @@ import Sidebar from './Sidebar.js';
 //import axios from 'axios';
 import plack from '../img/placks/plack1.png'
 
-import firebase from "firebase/app";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-import "firebase/auth";
-import "firebase/database";
-import "firebase/firestore";
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyDqQsVbeSXHmIpbcHs7IUGgJiTBF57_M74",
@@ -21,9 +21,8 @@ var firebaseConfig = {
   };
   
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-let db = firebase.firestore();
-
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
 
 class Contact extends Component {
 
@@ -199,7 +198,7 @@ class Contact extends Component {
                             <h1 className={`game-title`}>{this.props.title}</h1>
                         </div>  
                         <div className="d-box4 feedbackstructure">
-                                <button onClick className="reg-bttn" onClick={this.newContact}>New {this.props.title}</button>
+                                <button className="reg-bttn" onClick={this.newContact}>New {this.props.title}</button>
                             
                         </div>
                         
@@ -267,7 +266,7 @@ class Contact extends Component {
                                 
                             </form>
                             <div></div>
-                            <button onClick className="reg-bttn" onClick={(e) => this.sendForm(e)}>Send</button>
+                            <button className="reg-bttn" onClick={(e) => this.sendForm(e)}>Send</button>
                             
                         </div>
                     </div>

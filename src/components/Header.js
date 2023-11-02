@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../img/logo/zard2.svg';
+import ZardIcon2 from '../img/logo/ZardIcon2';
 
 
 class Header extends Component{
@@ -21,7 +21,7 @@ class Header extends Component{
 
                 {<div className="header-upper-bar">
                     <div>
-                        <img alt="logo" className="logo-header" src={logo} />
+                        <ZardIcon2 className="logo-header"/>
                     </div>
                     <div className="navbar-nav">
                         <NavLink className="navbar-link" to="/">HOME</NavLink>

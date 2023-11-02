@@ -15,7 +15,7 @@ import {valueMap, versionMap, versionArray, select, findSides, diceLimit} from '
 import Star from './Star.js';
 
 import plack from '../img/placks/plack1.png'
-import cross from '../img/cross/cross1.svg';
+import CrossIcon1 from '../img/cross/CrossIcon1.js';
 
 
 class GamesOfDice extends Component {
@@ -850,7 +850,7 @@ class GamesOfDice extends Component {
                                                                             }
                                                                         </select> 
                                                                         
-                                                                        <button onClick={() => this.removeDie(index)} className="remove-entry"><img alt="remove entry" className="cross-bttn" src={cross}></img></button>
+                                                                        <button onClick={() => this.removeDie(index)} className="remove-entry"><CrossIcon1 alt="remove entry" className="cross-bttn"/></button>
                                                                         
                                                                     </div>
                                                                 </React.Fragment>
@@ -874,7 +874,7 @@ class GamesOfDice extends Component {
                                                                 return(
                                                                     <div key={index} className="adding-player"> 
                                                                         <input key={index} className="reg-input" placeholder="Name of Player" value={player.name} onChange={(event) => this.playerNameInput(event, index)}/> 
-                                                                        <button key={index + "a"} className="remove-entry" onClick={() => this.removePlayer(index)}><img alt="remove entry" className="cross-bttn" src={cross}></img></button>
+                                                                        <button key={index + "a"} className="remove-entry" onClick={() => this.removePlayer(index)}><CrossIcon1 alt="remove entry" className="cross-bttn" /></button>
                                                                     </div>
                                                                 )
                                                             })
